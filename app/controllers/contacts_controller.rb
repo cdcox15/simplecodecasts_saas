@@ -4,7 +4,7 @@ class ContactsController < ApplicationController
 	end
 
 	def create 
-		@contact = Contact.new(contact_params)	
+		@contact = Contact.new(contact_params)	 
 		if @contact.save
 			name = params[:contact][:name]
 			email = params[:contact][:email]
